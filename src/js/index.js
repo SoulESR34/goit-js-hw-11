@@ -9,7 +9,7 @@ let page = 1;
 
 const searchImages = async () => {
     try {
-        allData = await getSearchData(search, page);
+        const allData = await getSearchData(search, page);
         allData.hits.forEach(element => {
             images.push(element)
         });
